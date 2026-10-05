@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HandWave Privacy Policy</title>
+<style>
+body{max-width:820px;margin:0 auto;padding:40px 24px;font-family:system-ui,sans-serif;line-height:1.65;color:#202124}
+h1,h2{line-height:1.25}.date{color:#5f6368}
+a{color:#1a73e8}
+</style>
+</head>
+<body>
+<h1>HandWave Privacy Policy</h1>
+<p class="date"><strong>Effective date:</strong> October 5, 2026</p>
+<p>HandWave is a Chrome extension that lets users interact with webpages using hand gestures captured through their device camera.</p>
+<h2>Camera and hand tracking</h2>
+<p>When gesture tracking is enabled, HandWave requests webcam access and processes the camera stream locally on the user's device to detect hands and supported gestures.</p>
+<p>Camera frames, hand landmarks, and gesture results are not uploaded to a HandWave server, sold, or shared with third parties.</p>
+<p>The extension does not record or permanently store webcam footage.</p>
+<h2>Stored settings</h2>
+<p>HandWave uses Chrome's <code>chrome.storage</code> API to store extension settings, including user preferences and site-specific settings.</p>
+<h2>Local processing</h2>
+<p>The hand-tracking runtime, WebAssembly assets, and hand landmark model required by HandWave are bundled with the extension and run locally.</p>
+<h2>Permissions</h2>
+<ul>
+<li><strong>offscreen</strong> — runs camera access and hand tracking in an offscreen extension document.</li>
+<li><strong>storage</strong> — saves HandWave settings.</li>
+<li><strong>tabs</strong> — identifies the active tab/site for site-specific settings and browser navigation functionality.</li>
+<li><strong>activeTab</strong> — accesses the tab the user is currently viewing so HandWave can apply site-specific settings and deliver gesture events to that page.</li>
+<li><strong>&lt;all_urls&gt;</strong> — allows HandWave's content script to provide gesture functionality on webpages.</li>
+</ul>
+<h2>Changes</h2>
+<p>This policy may be updated if HandWave's functionality or data practices change.</p>
+<h2>Contact</h2>
+<p>For privacy questions, open an issue on the <a href="https://github.com/madhav1521/handwave-site/issues">HandWave site repository</a>.</p>
+</body>
+</html>
